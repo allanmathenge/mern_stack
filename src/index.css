@@ -284,7 +284,7 @@ tr {
   min-height: 150px;
 }
 
-.form__input--incomplete {
+.input--incomplete {
   border: 1px solid red;
   outline: 1px solid red;
 }
