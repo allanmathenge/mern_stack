@@ -72,6 +72,7 @@ const NewUserForm = () => {
   })
 
   const errClass = isError ? "errmsg" : "offscreen"
+  
   const validUserClass = !validUsername ? 'form__input--incomplete' : ''
   const validPwdClass = !validPassword ? 'form__input--incomplete' : ''
   const validRolesClass = !Boolean(roles.length) ? 'form__input--incomplete' : ''
