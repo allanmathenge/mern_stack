@@ -8,7 +8,7 @@ const NoteList = () => {
     isSuccess,
     isError,
     error
-  } = useGetNotesQuery(undefined, {
+  } = useGetNotesQuery('noteList', {
     pollingInterval: 15000,
     refetchOnFocus: true,
     refetchOnMountOrArgChange: true
@@ -48,6 +48,8 @@ const NoteList = () => {
       </table>
     )
   }
+
+  return content
 }
 
 export default NoteList
