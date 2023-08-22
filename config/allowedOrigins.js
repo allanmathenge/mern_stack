@@ -1,5 +1,6 @@
 const allowedOrigins = [
-    'https://allan-api.onrender.com'
+    'https://allan.onrender.com',
+    'https://allan1.onrender.com'
 ]
 
 module.exports = allowedOrigins
