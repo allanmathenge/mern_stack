@@ -7,7 +7,7 @@ const Public = () => {
                 <h1>Welcome to <span className="nowrap">Allan Mathenge Web!</span></h1>
             </header>
             <main className="public__main">
-                <p>Located in Nakuru, Njoro town. We provide web creation services</p>
+                <p>Located in Nakuru, Njoro town.</p>
                 <address className="public__addr">
                     Allan Mathenge <br />
                     20107 Njoro <br />
