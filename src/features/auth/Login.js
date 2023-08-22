@@ -67,7 +67,7 @@ const handleToggle = () => setPersist(prev => !prev)
         <p ref={errRef} className={errClass} aria-live="assertive">{errMsg}</p> {/* aria-live would read an error like a screen reader would do */}
         
         <form className="form" onSubmit={handleSubmit}>
-          <label htmlFor="username">Username:</label>
+          <label htmlFor="username">Username: Allan</label>
           <input
             className="form__input"
             type="text"
@@ -79,7 +79,7 @@ const handleToggle = () => setPersist(prev => !prev)
             required
           />
 
-          <label htmlFor="password">Password:</label>
+          <label htmlFor="password">Password: mathenge</label>
           <input
             className="form__input"
             type="password"

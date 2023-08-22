@@ -55,8 +55,8 @@ const PersistLogin = () => {
         console.log('Error')
         content = (
             <p className="errmsg">
-                {error.data?.message}
-                <Link to="/login">Please Login Again</Link>
+                {`${error?.data?.message} - `}
+                <Link to="/login">Please Login Again!</Link>
             </p>
         )
     } else if (isSuccess && trueSuccess) { // persist: yes, token: yes
