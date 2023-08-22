@@ -4,10 +4,12 @@ import { useNavigate, Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { setCredentials } from './authSlice'
 import { useLoginMutation } from './authApiSlice'
-
+import PulseLoader from "react-spinners/PulseLoader"
 import usePersist from '../../hooks/usePersist'
+import useTitle from '../../hooks/useTitle'
 
 const Login = () => {
+  useTitle("Welcome")
   const userRef = useRef() // Used to put focus on user input
   const errRef = useRef() // Used to put focus if there's an error
   const [username, setUsername] = useState('')
@@ -56,7 +58,7 @@ const handleToggle = () => setPersist(prev => !prev)
 
   const errClass = errMsg ? "errmsg" : "offscreen"
 
-  if (isLoading) return <p>Loading...</p>
+  if (isLoading) return <PulseLoader color={"#F00"} />
 
   const content = (
     <section className="public">
